@@ -8,7 +8,7 @@ import requests
 import random
 
 # ---------------- PAGE CONFIG ----------------
-st.set_page_config(page_title="A Rose for Ammu 🌹", layout="centered", page_icon="🌹")
+st.set_page_config(page_title="A Rose for Liya 🌹", layout="centered", page_icon="🌹")
 
 # ---------------- ASSETS & FUNCTIONS ----------------
 def get_audio_html(file_path):
@@ -229,7 +229,7 @@ if not st.session_state.authenticated:
 components.html(get_audio_html("love.mp3"), height=0)
 
 # HEADER
-st.markdown("<div class='romantic-title'>Happy Rose Day, Ammu</div>", unsafe_allow_html=True)
+st.markdown("<div class='romantic-title'>Happy Rose Day, Liya</div>", unsafe_allow_html=True)
 st.markdown("<div style='text-align:center;'><span class='sub-title'>ETERNAL LOVE & DEVOTION</span></div>", unsafe_allow_html=True)
 
 # GLASS LETTER
@@ -238,7 +238,7 @@ st.markdown("""
     <div style='text-align:center; margin-bottom:20px;'>
         <span style='font-size:40px;'>🌹</span>
     </div>
-    <h3 style='color:#E0BFB8; text-align:center; font-family:"Great Vibes"; font-size:42px; margin-bottom:20px;'>My Dearest Ammu,</h3>
+    <h3 style='color:#E0BFB8; text-align:center; font-family:"Great Vibes"; font-size:42px; margin-bottom:20px;'>My Dearest Liya,</h3>
     <p style='font-size:20px; line-height:1.8; text-align:center; color: #fff; font-family:"Cinzel", serif; font-weight:400;'>
     "I would rather spend one lifetime with you, than face all the ages of this world alone."
     <br><br>
@@ -304,13 +304,13 @@ if st.session_state.rose_accepted:
     
     st.markdown("<div class='romantic-title' style='font-size:50px; margin-bottom:30px;'>Forever Yours</div>", unsafe_allow_html=True)
     
-    if os.path.exists("WhatsApp Video 2026-02-07 at 18.18.38.mp4"):
-         st.video("WhatsApp Video 2026-02-07 at 18.18.38.mp4", autoplay=True)
+    if os.path.exists("celebration.mp4"):
+         st.video("celebration.mp4", autoplay=True)
 
     # Gallery
     st.markdown("<div style='margin-top:50px; text-align:center; font-family:Cinzel; color:#B76E79; letter-spacing:3px;'>OUR MEMORIES</div>", unsafe_allow_html=True)
     cols = st.columns(3)
-    images = ["photo1.jpeg", "photo2.jpeg", "photo3.jpeg"]
+    images = ["photos1.jpg", "photos2.jpg", "photos3.jpg"]
     for i, img_path in enumerate(images):
         with cols[i]:
             if os.path.exists(img_path):
@@ -330,6 +330,7 @@ if st.session_state.rose_accepted:
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
 
 
