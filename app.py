@@ -248,7 +248,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # VIDEO
-if os.path.exists("Boy_Gives_Roses_To_Girl_Video.mp4"):
+if os.path.exists("WhatsApp Video 2026-02-07 at 18.18.38.mp4"):
     st.markdown("<div class='glass-card' style='padding:10px;'>", unsafe_allow_html=True)
     st.video("Boy_Gives_Roses_To_Girl_Video.mp4")
     st.markdown("</div>", unsafe_allow_html=True)
@@ -334,6 +334,7 @@ if st.session_state.rose_accepted:
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
 
 
