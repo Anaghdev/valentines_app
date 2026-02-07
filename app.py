@@ -229,7 +229,7 @@ if not st.session_state.authenticated:
 components.html(get_audio_html("love.mp3"), height=0)
 
 # HEADER
-st.markdown("<div class='romantic-title'>Happy Rose Day, Liya</div>", unsafe_allow_html=True)
+st.markdown("<div class='romantic-title'>Happy Rose Day, Ammu</div>", unsafe_allow_html=True)
 st.markdown("<div style='text-align:center;'><span class='sub-title'>ETERNAL LOVE & DEVOTION</span></div>", unsafe_allow_html=True)
 
 # GLASS LETTER
@@ -238,7 +238,7 @@ st.markdown("""
     <div style='text-align:center; margin-bottom:20px;'>
         <span style='font-size:40px;'>🌹</span>
     </div>
-    <h3 style='color:#E0BFB8; text-align:center; font-family:"Great Vibes"; font-size:42px; margin-bottom:20px;'>My Dearest Liya,</h3>
+    <h3 style='color:#E0BFB8; text-align:center; font-family:"Great Vibes"; font-size:42px; margin-bottom:20px;'>My Dearest Ammu,</h3>
     <p style='font-size:20px; line-height:1.8; text-align:center; color: #fff; font-family:"Cinzel", serif; font-weight:400;'>
     "I would rather spend one lifetime with you, than face all the ages of this world alone."
     <br><br>
@@ -323,7 +323,7 @@ if st.session_state.rose_accepted:
                 st.markdown(f"<div class='glass-card' style='padding:5px;'><img src='data:image/jpeg;base64,{img_data}' style='width:100%; border-radius:10px; opacity:0.9;'></div>", unsafe_allow_html=True)
 
     # Countdown
-    anniversary = datetime(2024, 10, 22)
+    anniversary = datetime(2026, 10, 22)
     days_left = (anniversary - datetime.now()).days
     st.markdown(f"""
     <div style='text-align:center; margin-top:50px; border-top:1px solid #4a0404; padding-top:20px;'>
@@ -334,4 +334,5 @@ if st.session_state.rose_accepted:
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
