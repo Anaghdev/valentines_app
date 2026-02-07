@@ -325,11 +325,12 @@ if st.session_state.rose_accepted:
     <div style='text-align:center; margin-top:50px; border-top:1px solid #4a0404; padding-top:20px;'>
         <div style='font-family:Cinzel; color:#E0BFB8; letter-spacing:2px;'>COUNTDOWN TO FOREVER</div>
         <div style='font-family:Great Vibes; color:#DC143C; font-size:60px;'>{days_left} Days</div>
-        <div style='font-family:Cinzel; color:#777; font-size:12px;'>UNTIL october 22</div>
+        <div style='font-family:Cinzel; color:#777; font-size:12px;'>UNTIL July 22</div>
     </div>
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
 
 
