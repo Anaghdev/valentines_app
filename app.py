@@ -218,7 +218,7 @@ if not st.session_state.authenticated:
     with col2:
         pwd = st.text_input("Key", type="password", label_visibility="collapsed")
         if st.button("Unlock Heart"):
-             if pwd == "11072007":
+             if pwd == "15122004":
                  st.session_state.authenticated = True
                  st.rerun()
              else:
@@ -319,7 +319,7 @@ if st.session_state.rose_accepted:
                 st.markdown(f"<div class='glass-card' style='padding:5px;'><img src='data:image/jpeg;base64,{img_data}' style='width:100%; border-radius:10px; opacity:0.9;'></div>", unsafe_allow_html=True)
 
     # Countdown
-    anniversary = datetime(2026, 10, 22)
+    anniversary = datetime(2026, 7, 15)
     days_left = (anniversary - datetime.now()).days
     st.markdown(f"""
     <div style='text-align:center; margin-top:50px; border-top:1px solid #4a0404; padding-top:20px;'>
@@ -330,6 +330,7 @@ if st.session_state.rose_accepted:
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
 
 
