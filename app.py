@@ -247,11 +247,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# VIDEO
-if os.path.exists("WhatsApp Video 2026-02-07 at 18.18.38.mp4"):
-    st.markdown("<div class='glass-card' style='padding:10px;'>", unsafe_allow_html=True)
-    st.video("WhatsApp Video 2026-02-07 at 18.18.38.mp4")
-    st.markdown("</div>", unsafe_allow_html=True)
+
 
 # INTERACTION
 if not st.session_state.rose_accepted:
@@ -308,8 +304,8 @@ if st.session_state.rose_accepted:
     
     st.markdown("<div class='romantic-title' style='font-size:50px; margin-bottom:30px;'>Forever Yours</div>", unsafe_allow_html=True)
     
-    if os.path.exists("celebration.mp4"):
-         st.video("celebration.mp4", autoplay=True)
+    if os.path.exists("WhatsApp Video 2026-02-07 at 18.18.38.mp4"):
+         st.video("WhatsApp Video 2026-02-07 at 18.18.38.mp4", autoplay=True)
 
     # Gallery
     st.markdown("<div style='margin-top:50px; text-align:center; font-family:Cinzel; color:#B76E79; letter-spacing:3px;'>OUR MEMORIES</div>", unsafe_allow_html=True)
@@ -334,6 +330,7 @@ if st.session_state.rose_accepted:
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
 
 
