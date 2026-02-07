@@ -314,7 +314,7 @@ if st.session_state.rose_accepted:
     # Gallery
     st.markdown("<div style='margin-top:50px; text-align:center; font-family:Cinzel; color:#B76E79; letter-spacing:3px;'>OUR MEMORIES</div>", unsafe_allow_html=True)
     cols = st.columns(3)
-    images = ["photo1.jpg", "photo2.jpg", "photo3.jpg"]
+    images = ["photo1.jpeg", "photo2.jpeg", "photo3.jpeg"]
     for i, img_path in enumerate(images):
         with cols[i]:
             if os.path.exists(img_path):
@@ -334,5 +334,6 @@ if st.session_state.rose_accepted:
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
 
 
