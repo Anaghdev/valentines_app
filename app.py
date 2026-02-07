@@ -8,7 +8,7 @@ import requests
 import random
 
 # ---------------- PAGE CONFIG ----------------
-st.set_page_config(page_title="A Rose for Liya 🌹", layout="centered", page_icon="🌹")
+st.set_page_config(page_title="A Rose for Ammu 🌹", layout="centered", page_icon="🌹")
 
 # ---------------- ASSETS & FUNCTIONS ----------------
 def get_audio_html(file_path):
@@ -218,7 +218,7 @@ if not st.session_state.authenticated:
     with col2:
         pwd = st.text_input("Key", type="password", label_visibility="collapsed")
         if st.button("Unlock Heart"):
-             if pwd == "15122004":
+             if pwd == "11072007":
                  st.session_state.authenticated = True
                  st.rerun()
              else:
@@ -323,14 +323,15 @@ if st.session_state.rose_accepted:
                 st.markdown(f"<div class='glass-card' style='padding:5px;'><img src='data:image/jpeg;base64,{img_data}' style='width:100%; border-radius:10px; opacity:0.9;'></div>", unsafe_allow_html=True)
 
     # Countdown
-    anniversary = datetime(2026, 7, 15)
+    anniversary = datetime(2024, 10, 22)
     days_left = (anniversary - datetime.now()).days
     st.markdown(f"""
     <div style='text-align:center; margin-top:50px; border-top:1px solid #4a0404; padding-top:20px;'>
         <div style='font-family:Cinzel; color:#E0BFB8; letter-spacing:2px;'>COUNTDOWN TO FOREVER</div>
         <div style='font-family:Great Vibes; color:#DC143C; font-size:60px;'>{days_left} Days</div>
-        <div style='font-family:Cinzel; color:#777; font-size:12px;'>UNTIL JULY 15</div>
+        <div style='font-family:Cinzel; color:#777; font-size:12px;'>UNTIL october 22</div>
     </div>
     """, unsafe_allow_html=True)
 
 st.markdown("<div style='height: 100px; text-align:center; color:#555; padding-top:50px; font-family:Cinzel;'>With all my love</div>", unsafe_allow_html=True)
+
